@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kayıt Formu - Fonksiyon Akademi Eğitim Kurumu</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(120deg, #2980b9, #6dd5fa);
+      color: #fff;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center;
+    }
+    nav {
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #f1c40f;
+    }
+    h1 {
+      margin-bottom: 25px;
+      font-size: 2.2rem;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 30px 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      background-color: #f1c40f;
+      color: #222;
+      font-weight: 700;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #d4ac0d;
+    }
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="kayit.html">Kayıt</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <h1>Kayıt Formu</h1>
+
+  <form action="https://formspree.io/f/mdkdbnoz" method="POST">
+    <label for="adSoyad">Ad Soyad</label>
+    <input type="text" id="adSoyad" name="adSoyad" placeholder="Adınızı ve soyadınızı giriniz" required />
+
+    <label for="telefon">Telefon Numarası</label>
+    <input type="tel" id="telefon" name="telefon" placeholder="Telefon numaranızı giriniz" required pattern="[0-9\s\+\-]{10,15}" title="Telefon numaranız 10-15 karakter arasında olmalı" />
+
+    <label for="email">E-posta Adresi (isteğe bağlı)</label>
+    <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz" />
+
+    <input type="submit" value="Gönder" />
+  </form>
+  
+
+  <footer>
+    © 2025 Fonksiyon Akademi Eğitim Kurumu - Tüm hakları saklıdır.
+  </footer>
+
+</body>
+
+</html>
+<!--Desing By aykutrecep07@gmil.com-->
+
